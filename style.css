@@ -1,0 +1,63 @@
+/* Beginning of file */
+html,
+body,
+ul,
+ol {
+  margin: 10;
+  padding: 10;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+h1 {
+  color: orange;
+}
+
+h2 {
+  color: grey;
+}
+
+nav ul {
+  margin: 5px;
+  padding: 5px;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.success-message {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: grey;
+}
+
+.button-basic, .button-approve, .button-reject {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.button-reject {
+  background-color: red;
+  color: yellow;
+}
+
+.button-approve {
+  background-color: green;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

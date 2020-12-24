@@ -1,0 +1,68 @@
+/* Beginning of file */
+
+@import "reset";
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+$primarycolor: orange;
+$secondaycolor: grey;
+
+h1 {
+   color: $primarycolor;
+}
+
+h2 {
+   color: $secondaycolor;
+}
+
+nav {
+    ul {
+      margin: 5px;
+      padding: 5px;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+}
+
+@mixin success-text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success-message {
+    @include success-text;
+    background-color: grey;
+}
+
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+}
+  
+.button-reject  {
+    @extend .button-basic;
+    background-color: red;
+    color: yellow;
+}
+  
+.button-approve  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+}
+
